@@ -17,5 +17,15 @@ public class DemoApp {
         //System.out.println("ba.filterBaskets(\"Amex\", 380.0, 400.0 = " + ba.filterBaskets("Amex", 380.0, 400.0));
         //System.out.println("ba.getEveryNthBasket(15000) = " + ba.getEveryNthBasket(15000));
         //System.out.println("ba.groupByProductCategory() = " + ba.groupByProductCategory().keySet());
+
+
+
+        WeekDays weekDays = WeekDays.Monday;
+
+        weekDays = WeekDays.Tuesday;
+
+        if (weekDays == WeekDays.Wednesday) {
+            System.out.println("PR Übungsabend");
+        }
     }
 }

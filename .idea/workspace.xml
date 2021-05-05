@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d844ec3c-2912-4a43-a7cc-478df63a0b11" name="Default Changelist" comment="Server-Communication">
+      <change afterPath="$PROJECT_DIR$/src/org/campus02/ecom/WeekDays.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/campus02/ecom/EcommerceLogic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/campus02/ecom/EcommerceLogic.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/campus02/ecom/DemoApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/campus02/ecom/DemoApp.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/org/campus02/ecom/ServerDemoApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/campus02/ecom/ServerDemoApp.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -15,6 +16,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Enum" />
       </list>
     </option>
   </component>
@@ -159,7 +161,14 @@
       <option name="project" value="LOCAL" />
       <updated>1620241248006</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Server-Communication">
+      <created>1620241716002</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1620241716002</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
