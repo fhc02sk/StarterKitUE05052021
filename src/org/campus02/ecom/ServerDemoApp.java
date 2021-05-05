@@ -10,6 +10,7 @@ public class ServerDemoApp {
 
         try (ServerSocket serverSocket = new ServerSocket(1234)) {
             System.out.println("waiting for client");
+
             Socket client = serverSocket.accept();
             System.out.println("client connected");
             EcommerceLogic ecommerceLogic = new EcommerceLogic(client);

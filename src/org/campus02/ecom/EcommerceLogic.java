@@ -56,8 +56,7 @@ public class EcommerceLogic implements Runnable {
                         bw.newLine();
                         bw.flush();
                     }
-                    else
-                    {
+                    else {
                         int number = Integer.parseInt(parts[1]);
                         ArrayList<BasketData> entries = analyzer.getEveryNthBasket(number);
 
