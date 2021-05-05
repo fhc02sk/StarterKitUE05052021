@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d844ec3c-2912-4a43-a7cc-478df63a0b11" name="Default Changelist" comment="BasketAnalyzer">
-      <change afterPath="$PROJECT_DIR$/src/org/campus02/ecom/EcommerceLogic.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/org/campus02/ecom/ServerDemoApp.java" afterDir="false" />
+    <list default="true" id="d844ec3c-2912-4a43-a7cc-478df63a0b11" name="Default Changelist" comment="Server-Communication">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/campus02/ecom/BasketAnalyzer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/campus02/ecom/BasketAnalyzer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/campus02/ecom/DemoApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/campus02/ecom/DemoApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/campus02/ecom/EcommerceLogic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/campus02/ecom/EcommerceLogic.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/campus02/ecom/ServerDemoApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/campus02/ecom/ServerDemoApp.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,9 +46,23 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.ServerDemoApp">
     <configuration name="DemoApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.campus02.ecom.DemoApp" />
+      <module name="StarterKitUE05052021" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.campus02.ecom.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ServerDemoApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.campus02.ecom.ServerDemoApp" />
       <module name="StarterKitUE05052021" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
@@ -87,6 +99,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ServerDemoApp" />
         <item itemvalue="Application.DemoApp" />
       </list>
     </recent_temporary>
@@ -118,7 +131,14 @@
       <option name="project" value="LOCAL" />
       <updated>1620235511331</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Server-Communication">
+      <created>1620238342706</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1620238342706</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -127,6 +147,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="BasketDataLoader" />
     <MESSAGE value="BasketAnalyzer" />
-    <option name="LAST_COMMIT_MESSAGE" value="BasketAnalyzer" />
+    <MESSAGE value="Server-Communication" />
+    <option name="LAST_COMMIT_MESSAGE" value="Server-Communication" />
   </component>
 </project>
