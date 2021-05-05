@@ -3,6 +3,7 @@ package org.campus02.ecom;
 import java.io.*;
 import java.net.Socket;
 import java.util.ArrayList;
+import java.util.HashMap;
 
 public class EcommerceLogic implements Runnable {
 
@@ -39,15 +40,56 @@ public class EcommerceLogic implements Runnable {
                     bw.flush();
                 } else if (parts[0].equals("GetEveryNth") && parts.length == 2){
 
+                    if (analyzer == null) {
+                        bw.write("<< OpenFile needs to be called first >>");
+                        bw.newLine();
+                        bw.flush();
+                    }
+                    else
+                    {
+                        int number = Integer.parseInt(parts[1]);
+                        ArrayList<BasketData> entries = analyzer.getEveryNthBasket(number);
+
+                        for (BasketData bd: entries) {
+                            bw.write(bd.toString());
+                            bw.newLine();
+                        }
+                        bw.write("count entries: " + entries.size());
+                        bw.newLine();
+                        bw.flush();
+                    }
+
                 } else if (parts[0].equals("GetStats") && parts.length == 1) {
 
+                    if (analyzer == null) {
+                        bw.write("<< OpenFile needs to be called first >>");
+                        bw.newLine();
+                        bw.flush();
+                    }
+                    else {
+                        HashMap<String, ArrayList<Double>> map = analyzer.groupByProductCategory();
+
+                        for (String productCategory: map.keySet()) {
+
+                            ArrayList<Double> orderTotals = map.get(productCategory);
+                            double sum = 0;
+                            for (double value : orderTotals) {
+                                sum += value;
+                            }
+                            sum = sum / orderTotals.size();
+
+                            bw.write(productCategory + " - " + sum);
+                            bw.newLine();
+                            bw.flush();
+                        }
+                    }
                 } else if (parts[0].equals("EXIT") && parts.length == 1) {
-
+                    break;
                 } else {
-                    // Ungültige Befehle
+                    bw.write("<< Unknown command >>");
+                    bw.newLine();
+                    bw.flush();
                 }
-
-
             }
         } catch (IOException e) {
             e.printStackTrace();
