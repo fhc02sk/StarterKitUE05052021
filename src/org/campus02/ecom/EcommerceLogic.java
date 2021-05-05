@@ -32,12 +32,23 @@ public class EcommerceLogic implements Runnable {
                 // parts[1] == path
 
                 if (parts[0].equals("OpenFile") && parts.length == 2){
-                    ArrayList<BasketData> baskets = BasketDataLoader.load(parts[1]);
-                    analyzer = new BasketAnalyzer(baskets);
+                    ArrayList<BasketData> baskets = null;
+                    try {
+                        baskets = BasketDataLoader.load(parts[1]);
 
-                    bw.write("<< basket data loaded with " + baskets.size() + " entries >>");
-                    bw.newLine();
-                    bw.flush();
+                        analyzer = new BasketAnalyzer(baskets);
+
+                        bw.write("<< basket data loaded with " + baskets.size() + " entries >>");
+                        bw.newLine();
+                        bw.flush();
+                    } catch (DataFileException e) {
+                        e.printStackTrace();
+
+                        bw.write("Error on loading: " + e.getMessage());
+                        bw.newLine();
+                        bw.flush();
+                    }
+
                 } else if (parts[0].equals("GetEveryNth") && parts.length == 2){
 
                     if (analyzer == null) {
@@ -92,8 +103,6 @@ public class EcommerceLogic implements Runnable {
                 }
             }
         } catch (IOException e) {
-            e.printStackTrace();
-        } catch (DataFileException e) {
             e.printStackTrace();
         }
     }
