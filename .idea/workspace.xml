@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d844ec3c-2912-4a43-a7cc-478df63a0b11" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/org/campus02/ecom/BasketDataLoader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/org/campus02/ecom/DataFileException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/org/campus02/ecom/DemoApp.java" afterDir="false" />
+    <list default="true" id="d844ec3c-2912-4a43-a7cc-478df63a0b11" name="Default Changelist" comment="BasketDataLoader">
+      <change afterPath="$PROJECT_DIR$/src/org/campus02/ecom/BasketAnalyzer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/org/campus02/ecom/BasketComparator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/campus02/ecom/BasketDataLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/campus02/ecom/BasketDataLoader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/campus02/ecom/DemoApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/campus02/ecom/DemoApp.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -104,9 +104,21 @@
       <updated>1588176736624</updated>
       <workItem from="1588176738189" duration="191000" />
     </task>
+    <task id="LOCAL-00001" summary="BasketDataLoader">
+      <created>1620233480491</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1620233480491</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="BasketDataLoader" />
+    <option name="LAST_COMMIT_MESSAGE" value="BasketDataLoader" />
   </component>
 </project>
